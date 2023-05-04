@@ -6,13 +6,19 @@ Trabalho de Conclusão de Curso (TCC), site da loja "Casa da Pólvora e do Armam
 
 Para manter a organização e a qualidade do código, é importante seguir os seguintes passos ao iniciar uma etapa:
 
-1. Criar uma Branch para a implementação:
+1. Atualize a lista de referências remotas no repositório local com o comando Git Fetch:
+
+```git
+git fetch
+```
+
+2. Criar uma Branch para a implementação:
 
 ```git
 git branch nome-da-branch
 ```
 
-2. Realizar toda a implementação na Branch criada:
+3. Realizar toda a implementação na Branch criada:
 
 ```git
 git checkout nome-da-branch
@@ -21,7 +27,7 @@ git add .
 git commit -m "Descrição das alterações realizadas"
 ```
 
-3. Após a finalização, realizar um Pull Request para que o código gerado seja revisado:
+4. Após a finalização, realizar um Pull Request para que o código gerado seja revisado:
 
 ```git
 # Subir as alterações da branch para o repositório remoto
@@ -30,7 +36,7 @@ git push origin nome-da-branch
 
 Em seguida, na plataforma de hospedagem do repositório, crie um Pull Request da Branch criada para a Branch Main.
 
-4. Se estiver tudo certo, realizar o Merge para a Branch Main:
+5. Se estiver tudo certo, realizar o Merge para a Branch Main:
 
 ```git
 # Voltar para a branch main
@@ -39,7 +45,7 @@ git checkout main
 git merge nome-da-branch
 ```
 
-5. Manter o projeto sempre funcional e limpo.
+6. Manter o projeto sempre funcional e limpo.
 
 Caso tenha dúvidas ou não esteja familiarizado com esse fluxo de trabalho, recomendamos assistir ao seguinte conteúdo: [RocketSeat](https://app.rocketseat.com.br/discover/course/github-para-times).
 
@@ -49,7 +55,7 @@ Em caso de dúvidas, entre em contato pelo Whatsapp ou Discord.
 
 Para manter um registro claro e organizado de todas as implementações realizadas no projeto, é importante que cada mudança seja anotada e explicada em um arquivo dentro da pasta "Documentation".
 
-Sugerimos o seguinte padrão de nomenclatura para os arquivos: YYYY-MM-DD*descricao_das_alteracoes.txt, onde "YYYY-MM-DD" representa a data em que a alteração foi realizada e "descricao_das_alteracoes" é uma breve descrição do que foi implementado. Utilize letras minúsculas e underscores (*) para separar as palavras.
+Sugerimos o seguinte padrão de nomenclatura para os arquivos: YYYY-MM-DD-descricao-das-alteracoes.txt, onde "YYYY-MM-DD" representa a data em que a alteração foi realizada e "descricao-das-alteracoes" é uma breve descrição do que foi implementado. Utilize letras minúsculas e hífen (-) para separar as palavras.
 
 Além disso, recomendamos que as anotações de implementação sejam salvas em arquivos de texto simples com a extensão ".txt", já que esse é um formato amplamente utilizado e que pode ser aberto em praticamente qualquer editor de texto.
 
