@@ -1,6 +1,6 @@
-# TCC_GH
+# Projeto: Cobaia.
 
-Trabalho de Conclusão de Curso (TCC), site da loja "Casa da Pólvora e do Armamento".
+Projeto Teste, Funcional, Prévia do Trabalho de Conclusão de Curso.
 
 ## Padronização para elaboração do projeto:
 
