@@ -1,6 +1,6 @@
-# Projeto: Cobaia.
+# Projeto: Só Recarga.
 
-Projeto Teste, Funcional, Prévia do Trabalho de Conclusão de Curso.
+Projeto Teste, Protótipo Funcional, Prévia do Trabalho de Conclusão de Curso.
 
 ## Padronização para elaboração do projeto:
 
@@ -9,20 +9,18 @@ Para manter a organização e a qualidade do código, é importante seguir os se
 1. Atualize a lista de referências remotas no repositório local com o comando Git Fetch:
 
 ```git
-git fetch
+git pull
 ```
 
 2. Criar uma Branch para a implementação:
 
 ```git
-git branch nome-da-branch
+git branch -b nome-da-branch
 ```
 
 3. Realizar toda a implementação na Branch criada:
 
 ```git
-git checkout nome-da-branch
-# Faça as alterações necessárias nos arquivos do projeto
 git add .
 git commit -m "Descrição das alterações realizadas"
 ```
@@ -41,8 +39,6 @@ Em seguida, na plataforma de hospedagem do repositório, crie um Pull Request da
 ```git
 # Voltar para a branch main
 git checkout main
-# Atualizar a branch main com as alterações da branch criada
-git merge nome-da-branch
 ```
 
 6. Manter o projeto sempre funcional e limpo.
