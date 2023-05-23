@@ -1,5 +1,6 @@
 ﻿using OR.ProductAPI.Models;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 
 namespace OR.ProductAPI.DTOs;
@@ -19,6 +20,7 @@ public class ProductDTO {
     [Range(1, 9999)]
     public long Stock { get; set; }
     public string? Image { get; set; }
+    public string? CategoryName { get; set; }
 
     [JsonIgnore]
     public CategoryModel? Category { get; set; }

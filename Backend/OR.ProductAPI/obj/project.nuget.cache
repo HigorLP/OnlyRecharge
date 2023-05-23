@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "46y3dsw9DN08DRpeLXzyEcaXDUCgKtb9qvYITLlj8Emo6LKfqwD/PgZQhJPRwSH3fbRgv2olfntBS6TPnoWEWQ==",
+  "dgSpecHash": "2rT0O/7oHo1PJC2auxNoeeHCXvMBQXUD760Um7BN2OrAv0SmTiyRHJLlB3Q7JnSBWp/kDvt55gD69Wp5hTRTjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\OR.ProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\OR.ProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devhi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\devhi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
