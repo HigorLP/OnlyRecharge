@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\OR.ProductAPI.csproj": {}
+    "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\OR.ProductAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\OR.ProductAPI.csproj": {
+    "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\OR.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\OR.ProductAPI.csproj",
+        "projectUniqueName": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\OR.ProductAPI.csproj",
         "projectName": "OR.ProductAPI",
-        "projectPath": "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\OR.ProductAPI.csproj",
+        "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\OR.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\devhi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\devhi\\Desktop\\OnlyRecharge\\OR.ProductAPI\\obj\\",
+        "outputPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
