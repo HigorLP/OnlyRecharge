@@ -5,7 +5,6 @@ using System.Text.Json;
 
 namespace OR.Web.Services;
 public class ProductService : IProductService {
-
     private readonly IHttpClientFactory _clientFactory;
     private const string apiEndpoint = "/api/products/";
     private readonly JsonSerializerOptions _options;
@@ -23,9 +22,8 @@ public class ProductService : IProductService {
         using (var response = await client.GetAsync(apiEndpoint)) {
             if (response.IsSuccessStatusCode) {
                 var apiResponse = await response.Content.ReadAsStreamAsync();
-
                 productsVM = await JsonSerializer
-                    .DeserializeAsync<IEnumerable<ProductViewModel>>(apiResponse, _options);
+                            .DeserializeAsync<IEnumerable<ProductViewModel>>(apiResponse, _options);
             } else {
                 return null;
             }
@@ -38,27 +36,27 @@ public class ProductService : IProductService {
         using (var response = await client.GetAsync(apiEndpoint + id)) {
             if (response.IsSuccessStatusCode) {
                 var apiResponse = await response.Content.ReadAsStreamAsync();
-
                 productVM = await JsonSerializer
-                    .DeserializeAsync<ProductViewModel>(apiResponse, _options);
+                          .DeserializeAsync<ProductViewModel>(apiResponse, _options);
             } else {
                 return null;
             }
         }
         return productVM;
+
+
     }
     public async Task<ProductViewModel> CreateProduct(ProductViewModel productVM) {
         var client = _clientFactory.CreateClient("ProductApi");
 
-        StringContent content = new StringContent(JsonSerializer
-            .Serialize(productVM), Encoding.UTF8, "application/json");
+        StringContent content = new StringContent(JsonSerializer.Serialize(productVM),
+                                Encoding.UTF8, "application/json");
 
         using (var response = await client.PostAsync(apiEndpoint, content)) {
             if (response.IsSuccessStatusCode) {
                 var apiResponse = await response.Content.ReadAsStreamAsync();
-
                 productVM = await JsonSerializer
-                    .DeserializeAsync<ProductViewModel>(apiResponse, _options);
+                            .DeserializeAsync<ProductViewModel>(apiResponse, _options);
             } else {
                 return null;
             }
@@ -67,21 +65,20 @@ public class ProductService : IProductService {
     }
     public async Task<ProductViewModel> UpdateProduct(ProductViewModel productVM) {
         var client = _clientFactory.CreateClient("ProductApi");
-
         ProductViewModel productUpdated = new ProductViewModel();
 
         using (var response = await client.PutAsJsonAsync(apiEndpoint, productVM)) {
             if (response.IsSuccessStatusCode) {
                 var apiResponse = await response.Content.ReadAsStreamAsync();
                 productUpdated = await JsonSerializer
-                    .DeserializeAsync<ProductViewModel>(apiResponse, _options);
+                                 .DeserializeAsync<ProductViewModel>(apiResponse, _options);
             } else {
                 return null;
             }
         }
         return productUpdated;
-    }
 
+    }
     public async Task<bool> DeleteProductById(int id) {
         var client = _clientFactory.CreateClient("ProductApi");
 

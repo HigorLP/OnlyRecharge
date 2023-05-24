@@ -31,7 +31,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Price)
                 </th>
-                <th />
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -50,11 +50,11 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td>
-                        <a asp-action="UpdateProduct" asp-route-id="@item.Id" title="Editar" class="btn btn-warning">
-                            <span class="fas fa-edit" />
+                        <a asp-action="UpdateProduct" asp-route-id="@item.Id" title="Edita" class="btn btn-warning">
+                            <span class="fas fa-edit"></span>
                         </a>
-                        <a asp-action="DeleteProduct" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
-                            <span class="fas fa-trash-alt" />
+                        <a asp-action="DeleteProduct" asp-route-id="@item.Id" title="Deleta" class="btn btn-danger">
+                            <span class="fas fa-trash-alt"></span>
                         </a>
                     </td>
                 </tr>
