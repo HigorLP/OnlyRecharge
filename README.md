@@ -15,7 +15,7 @@ git pull
 2. Criar uma Branch para a implementação:
 
 ```git
-git branch -b nome-da-branch
+git checkout -b nome-da-branch
 ```
 
 3. Realizar toda a implementação na Branch criada:

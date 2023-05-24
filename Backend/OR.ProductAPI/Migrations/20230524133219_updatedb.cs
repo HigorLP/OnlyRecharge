@@ -4,7 +4,7 @@
 
 namespace OR.ProductAPI.Migrations
 {
-    public partial class Initial : Migration
+    public partial class updatedb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

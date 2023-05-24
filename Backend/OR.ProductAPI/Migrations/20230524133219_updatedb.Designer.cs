@@ -11,8 +11,8 @@ using OR.ProductAPI.Data;
 namespace OR.ProductAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230521001735_Initial")]
-    partial class Initial
+    [Migration("20230524133219_updatedb")]
+    partial class updatedb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
