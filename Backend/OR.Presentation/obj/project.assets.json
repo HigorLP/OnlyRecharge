@@ -5,12 +5,10 @@
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
-          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+          "build/_._": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+          "buildMultiTargeting/_._": {}
         }
       },
       "Microsoft.OpenApi/1.2.3": {
@@ -35,7 +33,7 @@
           "Swashbuckle.AspNetCore.SwaggerUI": "6.2.3"
         },
         "build": {
-          "build/Swashbuckle.AspNetCore.props": {}
+          "build/_._": {}
         }
       },
       "Swashbuckle.AspNetCore.Swagger/6.2.3": {
@@ -84,6 +82,24 @@
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "related": ".pdb;.xml"
           }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OR.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OR.Domain": "1.0.0",
+          "OR.Infrastructure": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.2.3"
+        },
+        "compile": {
+          "bin/placeholder/OR.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OR.Application.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -240,6 +256,11 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "OR.Application/1.0.0": {
+      "type": "project",
+      "path": "../OR.Application/OR.Application.csproj",
+      "msbuildProject": "../OR.Application/OR.Application.csproj"
+    },
     "OR.Domain/1.0.0": {
       "type": "project",
       "path": "../OR.Domain/OR.Domain.csproj",
@@ -253,9 +274,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "OR.Domain >= 1.0.0",
-      "OR.Infrastructure >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "OR.Application >= 1.0.0",
+      "OR.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -265,11 +285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Application\\OR.Application.csproj",
-      "projectName": "OR.Application",
-      "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Application\\OR.Application.csproj",
+      "projectUniqueName": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Presentation\\OR.Presentation.csproj",
+      "projectName": "OR.Presentation",
+      "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Presentation\\OR.Presentation.csproj",
       "packagesPath": "C:\\Users\\devhi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Application\\obj\\",
+      "outputPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -285,18 +305,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Application\\OR.Application.csproj": {
+              "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Application\\OR.Application.csproj"
+            },
             "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Domain\\OR.Domain.csproj": {
               "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Domain\\OR.Domain.csproj"
-            },
-            "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Infrastructure\\OR.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\devhi\\Desktop\\Dev\\OnlyRecharge\\Backend\\OR.Infrastructure\\OR.Infrastructure.csproj"
             }
           }
         }
@@ -310,12 +329,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[6.2.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -328,9 +341,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
